@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Simple Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Text area box -->
+<div id="output" class="output" contenteditable="true">
+    Yahan kuch type karke dekho...
+</div>
+
+<br>
+<button onclick="clearText()">Clear Karo</button>
+
+<div class="options">
+    <div class="opt-box">
+        <div id="bg"></div>
+        <h4>BG Color</h4>
+    </div>
+
+    <div class="opt-box">
+        <div id="fc"></div>
+        <h4>Text Color</h4>
+    </div>
+
+    <div>
+        <!-- Font family selector -->
+        <select onchange="fontChange(this.value)">
+            <option value="Arial">Arial</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Courier New">Courier New</option>
+        </select>
+        <h4>Font Style</h4>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
